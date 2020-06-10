@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>模板引擎</title>
+</head>
+
+<body>
+  <h1>ESJ模板引擎demo</h1>
+  <% let name='马良' %>
+  <% let num1=1 %>
+  <% let num2=2 %>
+  <%= num1+num2 %>
+  <%- num2-num1 %>
+  <ul>
+    <% for( let index =0; index < 5; index++ ) { %>
+    <li>这是第<%= index %>条</li>
+    <% } %>
+  </ul>
+</body>
+
+</html>
